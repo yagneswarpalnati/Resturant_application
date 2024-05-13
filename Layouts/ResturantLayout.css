@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
+.resturant-container{
+    background-image: url(../../resturant.jpg);
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 2rem;
+    width: 100%;
+}
+
+.resturant-container header nav a{
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 4px;
+    color: blue;
+    
+  }
+  .resturant-container header nav a.active {
+    color: black;
+  }
+
+  .text_Style{
+    font-size: 18px;
+    font-weight:lighter;
+    border-radius: 10px;
+    background-image: url(../../text1.jpg);
+  }
+
+  .text_Style button{
+    border-radius: 25px;
+    color: blue;
+    font-size: 18px;
+    margin: 0;
+    font-family: "Rubik Moonrocks", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .text_Style button:hover{
+    border-color: gold;
+    cursor: pointer;
+    color: black;
+  }
+
+  .resturant-container header nav{
+    font-size: 35px;
+    display: flex;
+    justify-content: end;
+    max-width: 1200px;
+    margin: auto;
+    gap: 2rem;
+    margin-top: 5px;
+    justify-content: center;
+    font-family: "Rubik Moonrocks", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
