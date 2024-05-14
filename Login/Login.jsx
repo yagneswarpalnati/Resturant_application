@@ -18,7 +18,7 @@ export default function Login(){
 
     function handleSubmit(event){
         event.preventDefault();
-        axios.post('https://resturant-w4u6.onrender.com/login',{email,password})
+        axios.post('https://resturant-api-rust.vercel.app/login',{email,password})
         .then((result)=>
           {
             console.log(result)
