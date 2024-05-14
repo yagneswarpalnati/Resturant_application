@@ -27,7 +27,7 @@ export default function Mealitem({meal}){
     return (
         <li className="meal-item">
             <article>
-                <img src={`https://resturant-w4u6.onrender.com/${meal.image}`} alt={meal.name} />
+                <img src={`https://resturant-api-rust.vercel.app/${meal.image}`} alt={meal.name} />
                 <div>
                     <h3>{meal.name}</h3>
                     <p className="meal-item-price">{currenctFormatter.format(meal.price)}</p>
