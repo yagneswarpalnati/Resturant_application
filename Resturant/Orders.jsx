@@ -11,7 +11,7 @@ export default function Orders(){
         data:loadedMeals,
         isLoading,
         error
-    }=useHttp(`https://resturant-w4u6.onrender.com/customerOrder/${userEmail}`,reqConfig,[]);
+    }=useHttp(`https://resturant-api-rust.vercel.app/customerOrder/${userEmail}`,reqConfig,[]);
     if(isLoading){
         return <p className="center">Fetching Meals....</p>
     }
