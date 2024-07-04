@@ -10,7 +10,7 @@ export default function Meals(){
             data:loadedMeals,
             isLoading,
             error
-        }=useHttp('https://resturant-api-rust.vercel.app/meals',reqConfig,[]);
+        }=useHttp('https://resturant-w4u6.onrender.com/meals',reqConfig,[]);
 
     if(isLoading){
         return <p className="center">Fetching Meals....</p>

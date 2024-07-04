@@ -13,10 +13,10 @@ export default function Registration(){
 
   function handleSubmit(event){
     event.preventDefault();
-    axios.post('https://resturant-api-rust.vercel.app/register',{name,email,password})
+    axios.post('https://resturant-w4u6.onrender.com/register',{name,email,password})
     .then((result)=>
       {console.log(result)
-        if(result.data==='User email already exists'){
+        if(result.data.message!=='User created successfully'){
           setErr(true);
         }else{
           setErr(false);

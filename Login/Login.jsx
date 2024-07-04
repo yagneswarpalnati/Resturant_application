@@ -18,15 +18,15 @@ export default function Login(){
 
     function handleSubmit(event){
         event.preventDefault();
-        axios.post('https://resturant-api-rust.vercel.app/login',{email,password})
+        axios.post('https://resturant-w4u6.onrender.com/login',{email,password})
         .then((result)=>
           {
             console.log(result)
-            if(result.data.data==='Success'){
+            if(result.data.message==='Logged in successfully'){
               setMsg('')
               login(result.data.userEmail)
               navigate('/Resturant')
-            }else if (result.data==='Wrong password'){
+            }else if (result.data==='invalid password'){
               setMsg(`Password is Incorrect`);
             }else{
               setMsg('Not Registered, Please  Sign Up!');
@@ -42,9 +42,9 @@ export default function Login(){
           <h1>Login</h1>
           <form className='form-container' onSubmit={handleSubmit}>
             <label htmlFor='email'>Email</label>
-            <input type='email' id='email' name='email' placeholder='Enter Email'  onChange={(e)=>setEmail(e.target.value)}required/>
+            <input type='email' id='email' name='email' placeholder='Enter Email'  autoComplete='on' onChange={(e)=>setEmail(e.target.value)}required/>
             <label htmlFor='password'>Password</label>
-            <input type='password' id='password' name='password' placeholder='Enter Password'  onChange={(e)=>setPassword(e.target.value)}required/>
+            <input type='password' id='password' name='password' placeholder='Enter Password'  autoComplete='on' onChange={(e)=>setPassword(e.target.value)}required/>
             <button type='submit'>Login</button>
             {msg!='' &&<p style={{fontSize:'20px'}}>{msg}</p>}
           </form>
