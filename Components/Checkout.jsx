@@ -20,7 +20,7 @@ export default function Checkout(){
     const userProgressCtx=useContext(UserProgressContext);
 
     const {data,isLoading:isSending,error,sendRequest,clearData}=useHttp(
-        'https://resturant-api-rust.vercel.app/orders',
+        'https://resturant-w4u6.onrender.com/orders',
         reqConfig
     );
 
