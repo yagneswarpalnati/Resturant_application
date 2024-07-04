@@ -15,7 +15,7 @@ export default function Orders(){
     if(isLoading){
         return <p className="center">Fetching Meals....</p>
     }
-
+    console.log(userEmail);
     if(error){
         <Error title='Failed to fetch meals' message={error}/>
     }

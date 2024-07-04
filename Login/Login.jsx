@@ -24,7 +24,7 @@ export default function Login(){
             console.log(result)
             if(result.data.message==='Logged in successfully'){
               setMsg('')
-              login(result.data.userEmail)
+              login(email)
               navigate('/Resturant')
             }else if (result.data==='invalid password'){
               setMsg(`Password is Incorrect`);
