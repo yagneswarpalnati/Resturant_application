@@ -21,7 +21,6 @@ export default function Login(){
         axios.post('https://resturant-w4u6.onrender.com/login',{email,password})
         .then((result)=>
           {
-            console.log(result)
             if(result.data.message==='Logged in successfully'){
               setMsg('')
               login(email)
